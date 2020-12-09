@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		518184B22580C3C100AC6642 /* SimpleOATHDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518184B12580C3C100AC6642 /* SimpleOATHDemoApp.swift */; };
-		518184B42580C3C100AC6642 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518184B32580C3C100AC6642 /* ContentView.swift */; };
+		518184B42580C3C100AC6642 /* CredentialListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518184B32580C3C100AC6642 /* CredentialListView.swift */; };
 		518184B62580C3C400AC6642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518184B52580C3C400AC6642 /* Assets.xcassets */; };
 		518184B92580C3C400AC6642 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518184B82580C3C400AC6642 /* Preview Assets.xcassets */; };
+		518184C22580C46C00AC6642 /* CredentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518184C12580C46C00AC6642 /* CredentialView.swift */; };
+		518184C52580C4EA00AC6642 /* CredentialsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518184C42580C4EA00AC6642 /* CredentialsProvider.swift */; };
+		518184C92580C60900AC6642 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518184C82580C60900AC6642 /* Credential.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		518184AE2580C3C100AC6642 /* SimpleOATHDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleOATHDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518184B12580C3C100AC6642 /* SimpleOATHDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOATHDemoApp.swift; sourceTree = "<group>"; };
-		518184B32580C3C100AC6642 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		518184B32580C3C100AC6642 /* CredentialListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialListView.swift; sourceTree = "<group>"; };
 		518184B52580C3C400AC6642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		518184B82580C3C400AC6642 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		518184BA2580C3C400AC6642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		518184C12580C46C00AC6642 /* CredentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialView.swift; sourceTree = "<group>"; };
+		518184C42580C4EA00AC6642 /* CredentialsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsProvider.swift; sourceTree = "<group>"; };
+		518184C82580C60900AC6642 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				518184B12580C3C100AC6642 /* SimpleOATHDemoApp.swift */,
-				518184B32580C3C100AC6642 /* ContentView.swift */,
+				518184B32580C3C100AC6642 /* CredentialListView.swift */,
+				518184C12580C46C00AC6642 /* CredentialView.swift */,
+				518184C42580C4EA00AC6642 /* CredentialsProvider.swift */,
+				518184C82580C60900AC6642 /* Credential.swift */,
 				518184B52580C3C400AC6642 /* Assets.xcassets */,
 				518184BA2580C3C400AC6642 /* Info.plist */,
 				518184B72580C3C400AC6642 /* Preview Content */,
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				518184B42580C3C100AC6642 /* ContentView.swift in Sources */,
+				518184B42580C3C100AC6642 /* CredentialListView.swift in Sources */,
+				518184C52580C4EA00AC6642 /* CredentialsProvider.swift in Sources */,
+				518184C92580C60900AC6642 /* Credential.swift in Sources */,
 				518184B22580C3C100AC6642 /* SimpleOATHDemoApp.swift in Sources */,
+				518184C22580C46C00AC6642 /* CredentialView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
