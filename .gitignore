@@ -1,0 +1,5 @@
+xcuserdata/
+YubiKit/build
+YubiKit/releases
+.DS_Store
+/.swiftpm
