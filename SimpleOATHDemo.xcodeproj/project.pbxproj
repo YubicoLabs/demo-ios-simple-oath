@@ -63,7 +63,6 @@
 		518184B02580C3C100AC6642 /* SimpleOATHDemo */ = {
 			isa = PBXGroup;
 			children = (
-				518184D62580CA9F00AC6642 /* SimpleOATHDemo.entitlements */,
 				518184B12580C3C100AC6642 /* SimpleOATHDemoApp.swift */,
 				518184B32580C3C100AC6642 /* CredentialListView.swift */,
 				518184C12580C46C00AC6642 /* CredentialView.swift */,
@@ -71,6 +70,7 @@
 				518184C82580C60900AC6642 /* Credential.swift */,
 				518184B52580C3C400AC6642 /* Assets.xcassets */,
 				518184BA2580C3C400AC6642 /* Info.plist */,
+				518184D62580CA9F00AC6642 /* SimpleOATHDemo.entitlements */,
 				518184B72580C3C400AC6642 /* Preview Content */,
 			);
 			path = SimpleOATHDemo;
