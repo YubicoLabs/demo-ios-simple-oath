@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "YubiKit",
+        "repositoryURL": "https://github.com/Yubico/yubikit-ios",
+        "state": {
+          "branch": "4.0.0-beta01",
+          "revision": "fe8dc43f0bbb08d6f86410539ea8a3a20daed4a7",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		518184C22580C46C00AC6642 /* CredentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518184C12580C46C00AC6642 /* CredentialView.swift */; };
 		518184C52580C4EA00AC6642 /* CredentialsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518184C42580C4EA00AC6642 /* CredentialsProvider.swift */; };
 		518184C92580C60900AC6642 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518184C82580C60900AC6642 /* Credential.swift */; };
+		518184D02580CA4100AC6642 /* YubiKit in Frameworks */ = {isa = PBXBuildFile; productRef = 518184CF2580CA4100AC6642 /* YubiKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		518184C12580C46C00AC6642 /* CredentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialView.swift; sourceTree = "<group>"; };
 		518184C42580C4EA00AC6642 /* CredentialsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsProvider.swift; sourceTree = "<group>"; };
 		518184C82580C60900AC6642 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		518184D22580CA5300AC6642 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		518184D62580CA9F00AC6642 /* SimpleOATHDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleOATHDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518184D02580CA4100AC6642 /* YubiKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +46,7 @@
 		518184A52580C3C100AC6642 = {
 			isa = PBXGroup;
 			children = (
+				518184D22580CA5300AC6642 /* Bridging-Header.h */,
 				518184B02580C3C100AC6642 /* SimpleOATHDemo */,
 				518184AF2580C3C100AC6642 /* Products */,
 			);
@@ -58,6 +63,7 @@
 		518184B02580C3C100AC6642 /* SimpleOATHDemo */ = {
 			isa = PBXGroup;
 			children = (
+				518184D62580CA9F00AC6642 /* SimpleOATHDemo.entitlements */,
 				518184B12580C3C100AC6642 /* SimpleOATHDemoApp.swift */,
 				518184B32580C3C100AC6642 /* CredentialListView.swift */,
 				518184C12580C46C00AC6642 /* CredentialView.swift */,
@@ -94,6 +100,9 @@
 			dependencies = (
 			);
 			name = SimpleOATHDemo;
+			packageProductDependencies = (
+				518184CF2580CA4100AC6642 /* YubiKit */,
+			);
 			productName = SimpleOATHDemo;
 			productReference = 518184AE2580C3C100AC6642 /* SimpleOATHDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 518184A52580C3C100AC6642;
+			packageReferences = (
+				518184CE2580CA4100AC6642 /* XCRemoteSwiftPackageReference "yubikit-ios" */,
+			);
 			productRefGroup = 518184AF2580C3C100AC6642 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -215,6 +227,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -269,6 +282,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -279,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SimpleOATHDemo/SimpleOATHDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleOATHDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = JQ24ZDH48X;
@@ -301,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SimpleOATHDemo/SimpleOATHDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleOATHDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = JQ24ZDH48X;
@@ -340,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		518184CE2580CA4100AC6642 /* XCRemoteSwiftPackageReference "yubikit-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yubico/yubikit-ios";
+			requirement = {
+				branch = "4.0.0-beta01";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		518184CF2580CA4100AC6642 /* YubiKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 518184CE2580CA4100AC6642 /* XCRemoteSwiftPackageReference "yubikit-ios" */;
+			productName = YubiKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 518184A62580C3C100AC6642 /* Project object */;
 }
