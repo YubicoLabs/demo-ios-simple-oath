@@ -1,0 +1,33 @@
+== Yubico iOS Demo app: SimpleOATH
+This demo app is part of a webinar as part of the 4.0.0-beta01 release of the
+https://github.com/Yubico/yubikit-ios/[Yubico Mobile SDK for iOS].
+Please see the webinar for more details and a walkthrough of the app.
+
+The webinar itself is available to view here:
+https://www.youtube.com/watch?v=wd6vOGVjBVk
+or
+https://www.brighttalk.com/webcast/15793/455901
+
+
+=== Requirements
+To build and use this app, you will need Xcode (12.3 was used for
+this demo, newer versions will likely also work). You will also need a YubiKey
+with support for the OATH application, and with NFC or Lightning support, such
+as a YubiKey 5 NFC or YubiKey 5Ci.
+
+
+=== Following along with the webinar
+To follow along with the webinar, clone this repository, and check out one of
+the tags below, which show the code at certain points of the demo.
+
+The starting point of the webinar:
+
+ git checkout webinar-starting-point
+
+The end of the webinar:
+
+ git checkout webinar-finish
+
+Return to main:
+
+ git checkout main
